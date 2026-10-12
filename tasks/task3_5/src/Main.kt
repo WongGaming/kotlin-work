@@ -5,6 +5,10 @@ import kotlin.io.path.appendText
 import kotlin.io.path.readText
 import kotlin.io.path.writeText
 
-fun main() {
-    // Add your code here
+fun main(args: Array<String>) 
+{
+    val filePath = Path("test.txt")
+    val fileContents = filePath.readText()
+    println(fileContents)
+    filePath.writeText(args[0])
 }

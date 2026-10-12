@@ -1,13 +1,13 @@
 // Task 4.7: finding the longest line in a file
 import kotlin.io.path.Path
-import kotlin.io.path.readText
+import kotlin.io.path.useLines
 fun main(args: Array<String>)
 {
     val filePath = Path(args[0])
     var maxLength = 0
     var position = 0
     var highestPosition = 0
-    filePath.useLines
+    filePath.useLines()
     {
         for (line in it)
         {
@@ -19,5 +19,5 @@ fun main(args: Array<String>)
             }
         }
     }
-    println("Line {highestPosition} is the longest (length = {maxLength})")
+    println("Line $highestPosition is the longest (length = $maxLength)")
 }
