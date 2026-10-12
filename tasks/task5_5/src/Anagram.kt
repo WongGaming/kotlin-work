@@ -1,0 +1,1 @@
+infix fun String.anagramOf(other: String) = this.length == other.length && this.lowercase().toList().sorted() == other.lowercase().toList().sorted()
