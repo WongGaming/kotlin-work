@@ -7,36 +7,13 @@ typealias Triangle = Triple<Double,Double,Double>
 
 fun isValidTriangle(sides: Triple<Double, Double, Double>): Boolean
 {
-    val (side1, side2, side3) = sides
+    val (a, b, c) = sides
 
-    val side12 = side1 + side2
-    val side13 = side1 + side3
-    val side23 = side2 + side3
-    if (side12 < side1)
+    if(a + b > c && b + c > a && a + c > b )
     {
-        return false
+        return true
     }
-    if (side12 < side2)
-    {
-        return false
-    }
-    if (side13 < side1)
-    {
-        return false
-    }
-    if (side13 < side3)
-    {
-        return false
-    }
-    if (side23 < side2)
-    {
-        return false
-    }
-    if (side23 < side3)
-    {
-        return false
-    }
-    return true
+    return false
 }
 fun triangleArea(sides: Triple<Double, Double, Double>): Double
 {
