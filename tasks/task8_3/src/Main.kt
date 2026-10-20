@@ -3,5 +3,6 @@
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-    // Add your code here
+    val fileOut = fetchData(args[0])
+    println(averageTemp(fetchData(args[0])))
 }

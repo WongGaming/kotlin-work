@@ -2,4 +2,9 @@
 
 fun main() {
     // Add your testing code here
+    val text = readln()
+    val vowelCount = text.howMany(::isEnglishVowel)
+    println("$vowelCount vowels found")
 }
+
+fun isEnglishVowel(c: Char) = c.lowercase() in "aeiou"
