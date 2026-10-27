@@ -17,4 +17,19 @@ class MedianTest : FreeSpec({
     }
 
     // Write four more tests here
+    "Median of a list with one element" {
+        median(listOf<Float>(5.0f)) shouldBe 5.0f
+    }
+
+    "Median of a list with two elements" {
+        median(listOf<Float>(1.0f, 3.0f)) shouldBe 2.0f
+    }
+
+    "Median of a list with three elements" {
+        median(listOf<Float>(1.0f, 2.0f, 3.0f)) shouldBe 2.0f
+    }
+
+    "Median of a list with four elements" {
+        median(listOf<Float>(1.0f, 2.0f, 3.0f, 4.0f)) shouldBe 2.5f
+    }
 })
