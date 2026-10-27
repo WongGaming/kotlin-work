@@ -2,4 +2,5 @@
 
 fun main() {
     // Write your code here
+    println(Point(4.5, 7.0))
 }
