@@ -1,3 +1,5 @@
+package comp2850.banking
+
 class StudentAccount(holder: String) : BankAccount(holder) 
 {
     var overdraft = 0
