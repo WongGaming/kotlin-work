@@ -1,4 +1,7 @@
 // Task 16.2: main program
 
-fun main() {
+fun main() 
+{
+    val car = Car(200)
+    car.drive()
 }
